@@ -15,6 +15,6 @@ app.use('/', (req,res) => {
     res.send('I Think All Okay')
 })
 
-app.listen(port, () => {
+app.listen(port || 3001, () => {
     console.log(`Running on http://localhost:${port}`)
 })
